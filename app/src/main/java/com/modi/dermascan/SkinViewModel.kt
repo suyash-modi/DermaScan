@@ -108,7 +108,7 @@ class SkinViewModel : ViewModel() {
         val requestBody = MultipartBody.Builder()
             .setType(MultipartBody.FORM)
             .addFormDataPart(
-                "file",
+                "image",
                 "capture.jpg",
                 imageBytes.toRequestBody("image/jpeg".toMediaType())
             )
